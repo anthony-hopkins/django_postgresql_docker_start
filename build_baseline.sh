@@ -4,11 +4,20 @@
 # ensure that the <APP> instances are all replaced with the application name via user provided parameter.
 
 # Check number of arguments and exit if incorrect
-if [[ "$#" -ne 0 ]]; then
-  echo "Please run without providing arguments - they are not necessary."
+if [[ "$#" -ne 2 ]]; then
+  echo "Please provide your django project name and application name as seperate parameters."
   else
+    if [[ "${1}" -eq "%{2}" ]]; then
+      echo "Project name and application name should differ to avoid confusion. Trust me here..."
+      echo "Please run again with unique names..."
+      exit 1
+    fi
+    # Build new django project.
+    django-admin startproject "${1}"
+    # Build new Django app
+    python manage.py startapp "${2}"
     # Assign current base directory to a variable to pass to sed for replacement purposes.
-    APPDIR=$(basename $(pwd))
+    APPDIR=$(2)
     sed -i "s/<APP>/${APPDIR}/g" ./{Dockerfile,docker-compose.yml}
     # Move the management directory to the current application directory to allow the use of the custom commands.
     mv ./management ./${APPDIR}/
