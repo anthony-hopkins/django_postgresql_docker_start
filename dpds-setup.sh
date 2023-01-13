@@ -24,6 +24,11 @@ then
   fi
 fi
 
+# Clean up curl installation and unzip clutter
+rm -rf ./django_postgresql_docker_start-main
+rm ./README.md
+rm ./tmp.zip
+
 # GLOBALS
 PROJ_NAME="${1}"
 APP_NAME="${2}"
