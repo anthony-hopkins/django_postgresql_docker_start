@@ -18,7 +18,6 @@ then
   exit 1
 fi
 
-PROJECT_NAME="${1}"
-APP_NAME="${2}"
+APP_NAME="${1}"
 
-django-admin startproject ${PROJECT_NAME}
+python manage.py startapp ${APP_NAME}
