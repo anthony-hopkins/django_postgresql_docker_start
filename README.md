@@ -19,7 +19,7 @@ docker-compose is used heavily during the development process
 ### Installing
 
 ```
-curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip
+curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -r ./django_postgresql_docker_start-main/* && bash ./dpds-setup.sh
 ```
 
 ### Generating your Django project
