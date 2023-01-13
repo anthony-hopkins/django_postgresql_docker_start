@@ -10,16 +10,12 @@
 #
 # Both of the above arguments need to be unique and can not be the same as a built in Python module.
 
-if [[ "$#" -ne 2 ]]
+if [[ "$#" -ne 1 ]]
 then
-  echo "This script requires two arguments - django project name and django app name."
-  echo "Those names must be unique."
-else
-  if [[ "${1}" == "${2}" ]]
-  then
-    echo "Arguments MUST be unique to avoid confusion. /app/app/app format is gross."
-    exit 1
-  fi
+  echo "This script requires one argument - django app name."
+  echo "This name SHOULD be different than uyour Django project to avoid confusion."
+  echo "Exiting....."
+  exit 1
 fi
 
 PROJECT_NAME="${1}"
