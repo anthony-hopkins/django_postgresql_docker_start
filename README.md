@@ -17,11 +17,10 @@ docker-compose is used heavily during the development process
 * Docker version 20.10.21 (Any modern Docker version should work).
 
 ### Installing
-* Copy the below string and replace <DJANGO_PROJECT> and <DJANGO_APP> with your own project and app names.
-* Ensure that the project name and the app name are unique to avoid directory confusion. 
+* Copy the below string and replace <DJANGO_PROJECT> with your own project name.
 
 ```
-curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT> <DJANGO_APP>
+curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
 
 ### Generating your Django project
