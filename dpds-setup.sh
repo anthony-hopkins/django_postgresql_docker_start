@@ -29,8 +29,5 @@ PROJ_NAME="${1}"
 # Generate Django app and fix Docker files based on app name
 django-admin startproject ${PROJ_NAME}
 
-# Move core directory tino Django project directory so the wait_for_db command becomes available to manage.py
-mv ./core ./${PROJ_NAME}
-
 # Use sed to replace <APP> with out Django project name to ensure our Docker files are properly configured. 
 sed -i "s/<APP>/${PROJ_NAME}/g" ./{Dockerfile,docker-compose.yml}
