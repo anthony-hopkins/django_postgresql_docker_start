@@ -6,7 +6,9 @@ A simple way to enhance the Django/PostgreSQL/Docker development process.
 
 This process is designed to simplify the process of using PostgreSQL and Docker in conjunction with Django to implement development
  (and potential testing) from within a docker container. This is a good way to avoid the hassle of virtual environments 
- as well as ensures a consistent development environment that can be deployed anywhere docker is installed.
+ as well as ensures a consistent development environment that can be deployed anywhere docker is installed. This works by leveraging docker-compose
+ to ingest the current project directories code into the current container and exposing the Django port to the host operating system.
+ A usage example will be provided below to clarify this.
 
 ## Getting Started
 
