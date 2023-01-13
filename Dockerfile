@@ -9,7 +9,6 @@ COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 WORKDIR /<APP>
 EXPOSE 8000
 
-ARG DEV=false
 
 RUN pip install --upgrade pip && \
     apk add --update --no-cache postgresql-client && \
