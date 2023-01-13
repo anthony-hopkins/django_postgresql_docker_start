@@ -1,4 +1,4 @@
-# django-postgresql_docker_start
+# django_postgresql_docker_start
 
 A simple way to enhance the Django/PostgreSQL/Docker development process. 
 
