@@ -25,9 +25,6 @@ rm ./tmp.zip
 
 # GLOBALS
 PROJ_NAME="${1}"
-APP_NAME="${2}"
 
 # Generate Django app and fix Docker files based on app name
 django-admin startproject ${PROJ_NAME}
-cd ./${PROJ_NAME}
-python manage.py startapp ${APP_NAME}
