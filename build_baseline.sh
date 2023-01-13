@@ -7,7 +7,7 @@
 if [[ "$#" -ne 2 ]]; then
   echo "Please provide your django project name and application name as seperate parameters."
   else
-    if [[ "${1}" -eq "%{2}" ]]; then
+    if [[ "${1}" == "${2}" ]]; then
       echo "Project name and application name should differ to avoid confusion. Trust me here..."
       echo "Please run again with unique names..."
       exit 1
