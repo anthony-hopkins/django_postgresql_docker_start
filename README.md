@@ -44,5 +44,5 @@ Anthony Hopkins - anthony.b.hopkins@gmail.com
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+Shout out to these guys for basically providing a sweet README.md template:
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
