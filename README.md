@@ -19,7 +19,7 @@ docker-compose is used heavily during the development process
 ### Installing
 
 ```
-curl -L -o dpds-setup.zip https://gist.github.com/anthony-hopkins/8e18e70c32208b5e86829d42a8472f28/archive/16e8e67b873fba29d6dfd5fca94df0a593fafce3.zip
+curl -L -o dpds-setup.zip https://gist.github.com/anthony-hopkins/8e18e70c32208b5e86829d42a8472f28/archive/16e8e67b873fba29d6dfd5fca94df0a593fafce3.zip && unzip ./dpds-setup.zip && rm -rf ./dpds-setup.zip
 ```
 
 ### Generating your Django project
