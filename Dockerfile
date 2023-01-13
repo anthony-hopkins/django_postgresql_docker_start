@@ -13,7 +13,6 @@ RUN pip install --upgrade pip && \
     apk add --update --no-cache postgresql-client && \
     apk add --update --no-cache --virtual .tmp-build-deps build-base postgresql-dev musl-dev && \
     pip install -r /tmp/requirements.txt && \
-    fi && \
     rm -rf /tmp && \
     apk del .tmp-build-deps && \
     adduser --disabled-password --no-create-home django-user
