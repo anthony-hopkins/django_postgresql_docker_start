@@ -21,16 +21,21 @@ This process is designed to simplify the process of using PostgreSQL and Docker 
 
 * No install required. Simply clone the repository!
 
-### Executing program
+### Generating your Django project
 
 * Create a fresh Django project to create the project/app structure.
 ```
 django-admin startproject mysite
 ```
-* Run the build_baseline.sh script to correct docker related files to use the proper project directories.
+
+### Executing the build_baseline script to normalize the Docker files.
+
+* Run the build_baseline.sh script to replace <APP> entries in the Docker files with the proper application name.
 ```
 bash ./build_baseline.sh
 ```
+
+## How it all works!
 
 ## Authors
 
