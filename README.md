@@ -24,7 +24,7 @@ Once a project is started via the installation process container-based developme
 https://www.djangoproject.com/download/
 * Docker - Any modern version should be fine. See 
 https://docs.docker.com/get-docker/
-* Git bash or WSL as a terminal to leverage if usinf Windows. 
+* Git bash or WSL as a terminal to leverage if using Windows. 
 * Bash if using Linux/OSX/Unix/BSD
 
 ### Installing
