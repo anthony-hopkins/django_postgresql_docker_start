@@ -113,7 +113,8 @@ docker-compose up
 * This will build and start the Django application. The provided output if successful will tell you to visit 0.0.0.0:8000.
 * To verify the application built successfully in the container and all went well you can visit: http://127.0.0.1:8000
 * If you see the default django landing page you know everything went well! You are now ready to start writing your own Django apps!
-* In order to change your database settings you need to change the environment variables within the docker-compose.yml file located at the root of the project.
+* In order to change your database name and authentication settings you need to change the environment variables within the docker-compose.yml file.
+* In order to change database models, you need to modify the various models files throughout the project. A certain level of Django knowledge is exprected here.
 * Currently only PostgreSQL is supported by this process. You really shouldn't need another database for most projects.
 
 Simply add Django logic to the Django project directory through new modules and files/directories and run "docker-compose up" to 
