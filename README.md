@@ -9,7 +9,7 @@ by leveraging Docker and PostgreSQL (A very common/mature relational database) i
 
 One of the key features of this project is the addition of a manage.py command this project provides called "wait_for_db" which avoid
 the race condition where Django assumes the database is available because the service is started when in fact the actual database may still be
-propogating. This ensures we don't encounter any race condition exceptions.
+propagating. This ensures we don't encounter any race condition exceptions.
 
 Once a project is started via the installation process container-based development and deployment can comence and will be outlined below.
 
