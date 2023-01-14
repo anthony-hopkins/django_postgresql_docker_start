@@ -58,6 +58,7 @@ AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 $
 
 ```
+* The called script handles cleaaning the project structure up after it finished building the necessary hierarchy.
 * You should now see a directory structure like the following:
 ```
 AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
