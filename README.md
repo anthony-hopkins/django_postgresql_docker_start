@@ -23,10 +23,10 @@ Once a project is started via the installation process container-based developme
 ### Installing
 * Ensure you are in an empty directory where you are ready to start work.
 * Copy the below string and replace <DJANGO_PROJECT> with your own project name.
-* The script that is called handles building the django project as well as providing proper docker configurations.
 ```
 curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
+* The script that is called handles building the django project as well as providing proper docker configurations.
 * You should now see a directory structure like the following:
 ```AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 $ ls -lrth                                                              
