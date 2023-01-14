@@ -25,7 +25,7 @@ https://www.djangoproject.com/download/
 * Docker - Any modern version should be fine. See 
 https://docs.docker.com/get-docker/
 * Git bash or WSL as a terminal to leverage if using Windows. 
-* Bash if using Linux/OSX/Unix/BSD
+* Bash if using Linux/OSX
 
 ### Installing
 * Ensure you are in an empty directory where you are ready to start work.
