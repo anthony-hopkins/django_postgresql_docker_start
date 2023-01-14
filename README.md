@@ -28,39 +28,48 @@ Once a project is started via the installation process container-based developme
 curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
 * You should now see a directory structure like the following:
-```
-AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
-$ ls -lrth 
-total 10K
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096   74 Jan 13 17:57 requirements.txt
--rwxr-xr-x 1 AzureAD+AnthonyHopkins 4096 1.4K Jan 13 17:57 dpds-setup.sh
-drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096    0 Jan 13 18:01 test_app
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  577 Jan 13 18:01 Dockerfile
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  632 Jan 13 18:01 docker-compose.yml
+```AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ ls -lrth                                                              
+total 6.0K                                                                  
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  74 Jan 13 18:04 requirements.txt  
+drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096   0 Jan 13 18:04 testing_app       
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096 586 Jan 13 18:04 Dockerfile        
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096 641 Jan 13 18:04 docker-compose.yml
 
-AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
-$ ls -lrth  ./test_app/
+AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ ls -lrth ./testing_app/                                               
+total 5.0K                                                           
+drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096   0 Jan 13 18:04 core       
+-rwxr-xr-x 1 AzureAD+AnthonyHopkins 4096 689 Jan 13 18:04 manage.py  
+drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096   0 Jan 13 18:04 testing_app
+
+AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ ls -lrth ./testing_app/testing_app/                                   
+total 10K
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  415 Jan 13 18:04 asgi.py
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  774 Jan 13 18:04 urls.py
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  415 Jan 13 18:04 wsgi.py
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096    0 Jan 13 18:04 __init__.py
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096 3.4K Jan 13 18:04 settings.py
+
+AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ ls -lrth ./testing_app/core/management/
+__init__.py  commands/    
+
+AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ ls -lrth ./testing_app/core/management/
+total 1.0K
+drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096 0 Jan 13 18:04 commands
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096 1 Jan 13 18:04 __init__.py
+
+AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ ls -lrth ./testing_app/core/management/commands/
 total 5.0K
-drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096   0 Jan 13 17:57 core
--rwxr-xr-x 1 AzureAD+AnthonyHopkins 4096 686 Jan 13 18:01 manage.py
-drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096   0 Jan 13 18:01 test_app
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096 839 Jan 13 18:04 wait_for_db.py
+-rw-r--r-- 1 AzureAD+AnthonyHopkins 4096   1 Jan 13 18:04 __init__.py
 
-AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
-$ ls -lrth  ./test_app/test_app/
-total 10K
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  409 Jan 13 18:01 asgi.py
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  771 Jan 13 18:01 urls.py
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096  409 Jan 13 18:01 wsgi.py
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096    0 Jan 13 18:01 __init__.py
--rw-r--r-- 1 AzureAD+AnthonyHopkins 4096 3.4K Jan 13 18:01 settings.py
+AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 
-AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
-$ ls -lrth  ./test_app/core/
-total 0
-drwxr-xr-x 1 AzureAD+AnthonyHopkins 4096 0 Jan 13 17:57 management
-
-AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
-$
 ```
 
 ## How it all works!
