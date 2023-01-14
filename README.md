@@ -7,7 +7,7 @@ A simple way to enhance the Django/PostgreSQL/Docker development process.
 This project is used to create a more mature development process for Django web applications and/or RESTful APIs. It strives to do this
 by leveraging Docker and PostgreSQL (A very common/mature relational database) in an easy to understand yet hyper flexible manner.
 
-The PostgreSQL database is already installed and provided a default configuration that is easty to comprehend within the container. The developer only
+The PostgreSQL database is already installed and provides a default configuration that is easty to comprehend within the container. The developer only
 need worry about changing the username, password, and default database name via the "docker-compose.yml" file.
 
 One of the key features of this project is the addition of a manage.py command this project provides called "wait_for_db" which avoids
