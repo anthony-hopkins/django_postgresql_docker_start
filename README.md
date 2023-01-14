@@ -106,6 +106,16 @@ AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 ```
 
 ## How it all works!
+Now that you have a project structure to develop code in you can run the following to initialize your django environment and ensure everything is healthy
+```
+docker-compose up
+```
+* This will build and start the Django application. The provided output if successful will tell you to visit 0.0.0.0:8000.
+* To verify the application built successfully in the container and all went well you can visit: http://127.0.0.1:8000
+* If you see the default django landing page you know everything went well! You are now ready to start writing your own Django apps!
+
+Simply add Django logic to the django project directory through new modules and files/directories and run "docker-compose up" to 
+test your changes. Your code will be injected into the container ecosystem and ran from there. This allows easy deployment and collaboration!
 
 ## Authors
 
