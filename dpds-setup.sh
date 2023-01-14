@@ -36,4 +36,4 @@ mv ./core ./${PROJ_NAME}/
 rm ./${PROJ_NAME}/${PROJ_NAME}/settings.py && mv ./settings.py ./${PROJ_NAME}/${PROJ_NAME}
 
 # Use sed to replace <APP> with out Django project name to ensure various files are properly configured. 
-sed -i "s/<APP>/${PROJ_NAME}/g" ./{Dockerfile,docker-compose.yml,setings.py}
+sed -i "s/<APP>/${PROJ_NAME}/g" ./{Dockerfile,docker-compose.yml,settings.py}
