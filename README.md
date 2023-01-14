@@ -29,7 +29,7 @@ https://docs.docker.com/get-docker/
 ```
 curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
-* The script that is called handles building the django project as well as providing proper docker and django configurations.
+* The script that is called handles building the Django project as well as providing proper docker and Django configurations.
 * After the script is ran you should see similar output based on your own project name:
 ```
 AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
@@ -106,15 +106,17 @@ AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 ```
 
 ## How it all works!
-Now that you have a project structure to develop code in you can run the following to initialize your django environment and ensure everything is healthy
+Now that you have a project structure to develop code in you can run the following to initialize your Django environment and ensure everything is healthy
 ```
 docker-compose up
 ```
 * This will build and start the Django application. The provided output if successful will tell you to visit 0.0.0.0:8000.
 * To verify the application built successfully in the container and all went well you can visit: http://127.0.0.1:8000
 * If you see the default django landing page you know everything went well! You are now ready to start writing your own Django apps!
+* In order to change your database settings you need to change the environment variables within the docker-compose.yml file located at the root of the project.
+* Currently only PostgreSQL is supported by this process. You really shouldn't need another database for most projects.
 
-Simply add Django logic to the django project directory through new modules and files/directories and run "docker-compose up" to 
+Simply add Django logic to the Django project directory through new modules and files/directories and run "docker-compose up" to 
 test your changes. Your code will be injected into the container ecosystem and ran from there. This allows easy deployment and collaboration!
 
 ## Authors
