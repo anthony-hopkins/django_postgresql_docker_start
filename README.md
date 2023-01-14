@@ -7,7 +7,7 @@ A simple way to enhance the Django/PostgreSQL/Docker development process.
 This project is used to create a more mature development process for Django web applications and/or RESTful APIs. It strives to do this
 by leveraging Docker and PostgreSQL (A very common/mature relational database) in an easy to understand yet hyper flexible manner.
 
-One of the key features of this project is the addition of a manage.py command this project provides called "wait_for"db" which avoid
+One of the key features of this project is the addition of a manage.py command this project provides called "wait_for_db" which avoid
 the race condition where Django assumed the database is available because the service is started when in fact the actual database may still be
 propogating. This ensures we don't encounter any race condition exceptions.
 
