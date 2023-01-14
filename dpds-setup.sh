@@ -32,5 +32,8 @@ django-admin startproject ${PROJ_NAME}
 # Move core directory to new django project to add wait_for_db capabilities.
 mv ./core ./${PROJ_NAME}/
 
+# Replace Django app's settings.py file with a osycopg/wait_for_db ready version.
+rm ./${PROJ_NAME}/settings.py && mv ./settings.py ./${PROJ_NAME}
+
 # Use sed to replace <APP> with out Django project name to ensure our Docker files are properly configured. 
 sed -i "s/<APP>/${PROJ_NAME}/g" ./{Dockerfile,docker-compose.yml}
