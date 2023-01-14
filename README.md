@@ -25,6 +25,7 @@ https://docs.docker.com/get-docker/
 ### Installing
 * Ensure you are in an empty directory where you are ready to start work.
 * Copy the below string and replace <DJANGO_PROJECT> with your own project name.
+* If you don't change <DJANGO_PROJECT> with your own argument you will throw a bash exception.
 ```
 curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
