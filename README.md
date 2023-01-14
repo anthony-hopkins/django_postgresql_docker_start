@@ -28,7 +28,8 @@ curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_s
 ```
 * The script that is called handles building the django project as well as providing proper docker and django configurations.
 * You should now see a directory structure like the following:
-```AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+```
+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 $ ls -lrth                                                              
 total 6.0K                                                                  
 -rw-r--r-- 1 AnthonyHopkins 4096  74 Jan 13 18:04 requirements.txt  
