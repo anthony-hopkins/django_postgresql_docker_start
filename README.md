@@ -11,7 +11,7 @@ One of the key features of this project is the addition of a manage.py command t
 the race condition where Django assumes the database is available because the service is started when in fact the actual database may still be
 propagating. This ensures we don't encounter any race condition exceptions.
 
-Once a project is started via the installation process container-based development and deployment can comence and will be outlined below.
+Once a project is started via the installation process container-based development and deployment can commence and will be outlined below.
 
 ## Getting Started
 
