@@ -17,8 +17,10 @@ Once a project is started via the installation process container-based developme
 
 ### Dependencies
 
-* Django>=3.2.4 (Any version SHOULD work for just creating a base project/app structure)
-* Docker version 20.10.21 (Any modern Docker version should work).
+* Django - Any current install will work
+https://www.djangoproject.com/download/
+* Docker - Any modern version should be fine
+https://docs.docker.com/get-docker/
 
 ### Installing
 * Ensure you are in an empty directory where you are ready to start work.
