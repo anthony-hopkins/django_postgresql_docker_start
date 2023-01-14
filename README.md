@@ -21,7 +21,7 @@ Once a project is started via the installation process container-based developme
 * Docker version 20.10.21 (Any modern Docker version should work).
 
 ### Installing
-* Ensure you are in a fresh directory where you are ready to start work.
+* Ensure you are in an empty directory where you are ready to start work.
 * Copy the below string and replace <DJANGO_PROJECT> with your own project name.
 * The script that is called handles building the django project as well as providing proper docker configurations.
 ```
