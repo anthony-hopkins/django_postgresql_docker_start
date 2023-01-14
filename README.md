@@ -30,6 +30,34 @@ https://docs.docker.com/get-docker/
 curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
 * The script that is called handles building the django project as well as providing proper docker and django configurations.
+* After the script is ran you should see similar output based on your own project name:
+```
+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$ curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh testing_app
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed  
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 
+100  7179    0  7179    0     0  12054      0 --:--:-- --:--:-- --:--:-- 12054
+Archive:  tmp.zip
+cdc3de9c4e76927f7864d72c8436708f49e13bb2                                                  
+   creating: django_postgresql_docker_start-main/                                         
+  inflating: django_postgresql_docker_start-main/Dockerfile                               
+  inflating: django_postgresql_docker_start-main/README.md                                
+   creating: django_postgresql_docker_start-main/core/                                    
+   creating: django_postgresql_docker_start-main/core/management/                         
+ extracting: django_postgresql_docker_start-main/core/management/__init__.py              
+   creating: django_postgresql_docker_start-main/core/management/commands/                
+ extracting: django_postgresql_docker_start-main/core/management/commands/__init__.py     
+  inflating: django_postgresql_docker_start-main/core/management/commands/wait_for_db.py  
+  inflating: django_postgresql_docker_start-main/docker-compose.yml                       
+  inflating: django_postgresql_docker_start-main/dpds-setup.sh
+  inflating: django_postgresql_docker_start-main/requirements.txt
+  inflating: django_postgresql_docker_start-main/settings.py
+
+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
+$
+
+```
 * You should now see a directory structure like the following:
 ```
 AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
