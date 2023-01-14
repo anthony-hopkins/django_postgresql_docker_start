@@ -26,7 +26,7 @@ Once a project is started via the installation process container-based developme
 ```
 curl -L -o tmp.zip https://github.com/anthony-hopkins/django_postgresql_docker_start/archive/refs/heads/main.zip && unzip tmp.zip && cp -a ./django_postgresql_docker_start-main/. . && bash ./dpds-setup.sh <DJANGO_PROJECT>
 ```
-* The script that is called handles building the django project as well as providing proper docker configurations.
+* The script that is called handles building the django project as well as providing proper docker and django configurations.
 * You should now see a directory structure like the following:
 ```AzureAD+AnthonyHopkins@DESKTOP-4AC785K MINGW64 ~/PycharmProjects/testing
 $ ls -lrth                                                              
