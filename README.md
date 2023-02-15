@@ -120,7 +120,7 @@ docker-compose up
 * If you see the default django landing page you know everything went well! You are now ready to start writing your own Django apps!
 * In order to change your database name and authentication settings you need to change the environment variables within the docker-compose.yml file.
 * In order to change database models, you need to modify the various models files throughout the project. A certain level of Django knowledge is exprected here.
-* Currently only PostgreSQL is supported by this process. You really shouldn't need another database for most projects.
+* Currently only PostgreSQL is supported by this process. More database support will be added as needed.
 
 Simply add Django logic to the Django project directory through new modules and files/directories and run "docker-compose up" to 
 test your changes. Your code will be injected into the container ecosystem and ran from there. This allows easy deployment and collaboration!
